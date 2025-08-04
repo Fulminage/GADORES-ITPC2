@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Registration Form</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Register</h2>
+    <p>Please complete the form below</p>
+
+    <form>
+      <label>First Name:</label>
+      <input type="text" name="firstName" required>
+
+      <label>Last Name:</label>
+      <input type="text" name="lastName" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Create Password:</label>
+      <input type="password" name="password" required>
+
+      <label>Program:</label>
+      <input type="text" name="program" required>
+
+      <label>Year Level:</label>
+      <input type="number" name="year" min="1" max="5" required>
+
+      <label>
+        <input type="checkbox" name="terms"> I accept the <a href="#">terms and conditions</a>
+      </label>
+
+      <label>Upload a profile picture:</label>
+      <input type="file" name="profilePic">
+
+      <label>Birthdate:</label>
+      <input type="date" name="birthdate" required>
+
+      <label>Specialization:</label>
+      <select name="specialization" required>
+        <option value="">--Select--</option>
+        <option value="IT">Information Technology</option>
+        <option value="CS">Computer Science</option>
+        <option value="IS">Information Systems</option>
+      </select>
+
+      <label>Bio:</label>
+      <textarea name="bio" rows="3">I like coding on the beach...</textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
